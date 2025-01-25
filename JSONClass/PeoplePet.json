@@ -1,0 +1,30 @@
+[
+    {
+        "name": "name 1",
+        "emai": "email1",
+        "pets": [
+            {
+                "nameOfPet": "Puppy",
+                "dateOfBirth": "4/1/2024"
+            },
+            {
+                "nameOfPet": "Kitten",
+                "dateOfBirth": "3/14/2024"
+            }
+        ]
+    },
+    {
+        "name": "Person2",
+        "emai": "email2",
+        "pets": [
+            {
+                "nameOfPet": "Puppy2",
+                "dateOfBirth": "3/1/2024"
+            },
+            {
+                "nameOfPet": "Kitten2",
+                "dateOfBirth": "2/10/2024"
+            }
+        ]
+    }
+]

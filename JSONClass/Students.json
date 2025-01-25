@@ -1,0 +1,16 @@
+[
+    {
+        "fullName": "John Do",
+        "phone": "333-5678-8765",
+        "email": "john@email.com",
+        "id": 1,
+        "DateOfBirth": "4/1/2000"
+    },
+    {
+        "fullName": "Adele Vence",
+        "phone": "456-2587-3658",
+        "email": "adele@email.com",
+        "id": 2,
+        "DateOfBirth": "7/2/1987"
+    }
+]
