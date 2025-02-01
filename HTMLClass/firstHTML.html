@@ -4,23 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Class Demo 1</title>
+    <link rel="stylesheet" href="custom.css">
 </head>
 
 <body>
-    <h1>This is a heading </h1>
-    <h2>This is heading 2</h2>
-    <p>Thisis some paragraph. ReductionFormula - Optional. This formula is evaluated over the record that was found, and
+    <!-- <style>
+        h2 {
+            color: brown;
+            text-align: center;
+            text-decoration: underline;
+        }
+        span {
+            font-style: italic;
+            font-weight: 600;
+            color: #80058b;
+        }
+    </style> -->
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
+    <h1 id="firsth1">This is a heading h1</h1>
+    <h2 id="firsth2" class="myh2">This is heading 2</h2>
+    <p>Thisis some paragraph. <span>ReductionFormula</span> - Optional. This formula is evaluated over the record that
+        was found, and
         then reduces the record to a single value. You can reference columns within the table. If you don't use this
         parameter, the function returns the full record from the table. In the UI, the syntax is shown as result above
         the function box.</p>
+    <h2 id="secondh2">Raza Yourube Charts Video </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RfiXzEb1jwU?si=Lteev-sHXrMVOJxk&amp;start=62"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <br>
     <img src="https://www.dutch.com/cdn/shop/articles/shutterstock_1290320698.jpg" alt="Puppy image" width="300">
-    <table border="1">
+    <img src="https://www.dutch.com/cdn/shop/articles/shutterstock_1290320698.jpg" alt="Puppy image" width="300">
+    <br>
+    <img src="https://www.dutch.com/cdn/shop/articles/shutterstock_1290320698.jpg" alt="Puppy image" width="300">
+    <img src="https://www.dutch.com/cdn/shop/articles/shutterstock_1290320698.jpg" alt="Puppy image" width="300">
+    <br>
+    <img src="https://www.dutch.com/cdn/shop/articles/shutterstock_1290320698.jpg" alt="Puppy image" width="300">
+    <br>
+    <h2 class="myh2">With div example having two pictures in one line </h2>
+    <div>
+        <img src="https://www.dutch.com/cdn/shop/articles/shutterstock_1290320698.jpg" alt="Puppy image" width="300">
+        <img src="https://www.dutch.com/cdn/shop/articles/shutterstock_1290320698.jpg" alt="Puppy image" width="300">
+    </div>
+    <div>
+        <img src="https://www.dutch.com/cdn/shop/articles/shutterstock_1290320698.jpg" alt="Puppy image" width="300">
+        <img src="https://www.dutch.com/cdn/shop/articles/shutterstock_1290320698.jpg" alt="Puppy image" width="300">
+    </div>
+
+
+    <table id="table1">
         <tr>
-            <td>First Column</td>
-            <td>Second Column</td>
-            <td>Third Column</td>
-            <td>Fourth Column</td>
+            <th class="myh2">First Column</th>
+            <th>Second Column</th>
+            <th>Third Column</th>
+            <th>Fourth Column</th>
+        </tr>
+        <tr>
+            <td>First Column first row</td>
+            <td>Second Column first row </td>
+            <td>Third Column first row</td>
+            <td>Fourth Column first row</td>
+        </tr>
+        <tr>
+            <td>First Column first row</td>
+            <td>Second Column first row </td>
+            <td>Third Column first row</td>
+            <td>Fourth Column first row</td>
         </tr>
         <tr>
             <td>First Column first row</td>
@@ -29,6 +84,23 @@
             <td>Fourth Column first row</td>
         </tr>
     </table>
+
+    <h2 id="thirdh2">Bulletted and numbered items </h2>
+    <ul>
+        <li>Item 1 </li>
+        <li>Item 2 </li>
+        <li>Item 3 </li>
+        <li>Item 4 </li>
+        <li>Item 5 </li>
+    </ul>
+
+    <ol type="i">
+        <li>Item 1 </li>
+        <li>Item 2 </li>
+        <li>Item 3 </li>
+        <li>Item 4 </li>
+        <li>Item 5 </li>
+    </ol>
 </body>
 
 </html>

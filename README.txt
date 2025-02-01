@@ -41,6 +41,7 @@ What are the different contents we read on a web?
     - Paragraphs (Texts) - elenment p examle <p>Some text</p>
     - Links - element a  exmple <a href="">Some text</a>
     - Images - element img example <img src="">
+    - new line(break) - element br example <br>
     - Table - element table, td, tr, th <table><tr><td></td></tr></table>
     - Bulletted items element ul, li example <ul><li>Item 1</li></ul>
     - Numbered Items ol, li  example <ol><li>Item 1</li></ol>
@@ -48,6 +49,8 @@ What are the different contents we read on a web?
     - Videos element video 
     - Audio element audio 
     - Youtube and content from other website - element iframe 
+    - block element - div example <div>Content </div>
+    - inline element - span examle <span> content </span>
 
     - Button - element button <button>Buttun Name</button>
     - Text Box - element input <input>
@@ -56,6 +59,15 @@ What are the different contents we read on a web?
     - Radio button - element input type radio examle <input type="radio">
     - Check boxes - input type checkbox <input type="checkbox">
     
+
+    Cascading style sheet 
+
+    Syntax 
+
+    selector {
+        property1: value1; example: font-size: 16px;
+        ropety2:value2;
+        }
 
 
 
