@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "featured-employees-client-side-solution",
+    "id": "5c72b6d5-b0bc-4dea-ba9d-3e24a9174e48",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "featured-employees description"
+      },
+      "longDescription": {
+        "default": "featured-employees description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "featured-employees Feature",
+        "description": "The feature that activates elements of the featured-employees solution.",
+        "id": "f3621abc-08f4-4c02-96aa-f7259d01b82e",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/featured-employees.sppkg"
+  }
+}
