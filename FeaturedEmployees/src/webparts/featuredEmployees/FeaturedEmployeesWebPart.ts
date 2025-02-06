@@ -5,10 +5,10 @@ import {
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import type { IReadonlyTheme } from '@microsoft/sp-component-base';
-import { escape } from '@microsoft/sp-lodash-subset';
 
 import styles from './FeaturedEmployeesWebPart.module.scss';
 import * as strings from 'FeaturedEmployeesWebPartStrings';
+require("./customw3.css");
 
 export interface IFeaturedEmployeesWebPartProps {
   description: string;
@@ -16,54 +16,92 @@ export interface IFeaturedEmployeesWebPartProps {
 
 export default class FeaturedEmployeesWebPart extends BaseClientSideWebPart<IFeaturedEmployeesWebPartProps> {
 
-  private _environmentMessage: string = '';
-
+  //private _environmentMessage: string = '';
+//https://www.w3schools.com/w3images/team2.jpg
   public render(): void {
     this.domElement.innerHTML = `
     <section class="${styles.featuredEmployees} ${!!this.context.sdks.microsoftTeams ? styles.teams : ''}">
-      <div class="${styles.welcome}">      
-        <h2>Well done, ${escape(this.context.pageContext.user.displayName)}!</h2>
-        <div>${this._environmentMessage}</div>
-        <div>Web part property value: <strong>${escape(this.properties.description)}</strong></div>
-        <h2>Featured Employee webpart coming soon updated....</h2>
-      </div>      
+      <div class="w3-container w3-padding-32" id="about">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+        <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+                <h3>John Doe</h3>
+                <p class="w3-opacity">CEO & Founder</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
+                <h3>Jane Doe</h3>
+                <p class="w3-opacity">Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike" style="width:100%">
+                <h3>Mike Ross</h3>
+                <p class="w3-opacity">Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan" style="width:100%">
+                <h3>Dan Star</h3>
+                <p class="w3-opacity">Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+                <h3>John Doe</h3>
+                <p class="w3-opacity">CEO & Founder</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
+                <h3>Jane Doe</h3>
+                <p class="w3-opacity">Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike" style="width:100%">
+                <h3>Mike Ross</h3>
+                <p class="w3-opacity">Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan" style="width:100%">
+                <h3>Dan Star</h3>
+                <p class="w3-opacity">Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+        </div>   
     </section>`;
   }
 
-  protected onInit(): Promise<void> {
-    return this._getEnvironmentMessage().then(message => {
-      this._environmentMessage = message;
-    });
-  }
+  // protected onInit(): Promise<void> {
+  //   return this._getEnvironmentMessage().then(message => {
+  //     this._environmentMessage = message;
+  //   });
+  // }
 
 
-
-  private _getEnvironmentMessage(): Promise<string> {
-    if (!!this.context.sdks.microsoftTeams) { // running in Teams, office.com or Outlook
-      return this.context.sdks.microsoftTeams.teamsJs.app.getContext()
-        .then(context => {
-          let environmentMessage: string = '';
-          switch (context.app.host.name) {
-            case 'Office': // running in Office
-              environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentOffice : strings.AppOfficeEnvironment;
-              break;
-            case 'Outlook': // running in Outlook
-              environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentOutlook : strings.AppOutlookEnvironment;
-              break;
-            case 'Teams': // running in Teams
-            case 'TeamsModern':
-              environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentTeams : strings.AppTeamsTabEnvironment;
-              break;
-            default:
-              environmentMessage = strings.UnknownEnvironment;
-          }
-
-          return environmentMessage;
-        });
-    }
-
-    return Promise.resolve(this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentSharePoint : strings.AppSharePointEnvironment);
-  }
+  
 
   protected onThemeChanged(currentTheme: IReadonlyTheme | undefined): void {
     if (!currentTheme) {
